@@ -10,23 +10,42 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f9fc;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
     }
     header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
+      margin-top: 15px;
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav {
+      background: #203a43;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
     }
@@ -35,6 +54,12 @@
       margin-bottom: 30px;
       color: #203a43;
     }
+    .about {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -42,7 +67,7 @@
     }
     .card {
       background: #fff;
-      padding: 20px;
+      padding: 22px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
@@ -50,9 +75,15 @@
       margin-top: 0;
       color: #2c5364;
     }
-    .card p {
-      font-size: 0.95rem;
-      line-height: 1.5;
+    .why {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .why div {
+      background: #eef3f7;
+      padding: 20px;
+      border-radius: 10px;
     }
     .contact {
       background: #eef3f7;
@@ -61,15 +92,13 @@
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px 15px;
       background: #203a43;
       color: #fff;
       font-size: 0.9rem;
     }
-    a {
-      color: #2c5364;
-      text-decoration: none;
-      font-weight: bold;
+    footer p {
+      margin: 6px 0;
     }
   </style>
 </head>
@@ -77,47 +106,92 @@
 
   <header>
     <h1>YUKTI – Solutions Hub</h1>
-    <p>Your one-stop partner for digital, business & legal solutions</p>
+    <p>Your one-stop hub for digital solutions, business compliance, and legal assistance. We help individuals and small businesses grow with confidence.</p>
   </header>
 
-  <section>
-    <h2>What We Do</h2>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about">
+      <p><strong>YUKTI – Solutions Hub</strong> is built to support startups, small businesses, professionals and individuals with reliable, affordable and technology-driven services.</p>
+      <p>From website creation to GST compliance, from business registration to legal assistance through an associated lawyer, we simplify complex processes so you can focus on growth.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
     <div class="services">
       <div class="card">
         <h3>Website Development</h3>
-        <p>Simple, fast and professional websites for individuals, startups and small businesses to build their online presence.</p>
+        <p>Professional, fast and mobile-friendly websites designed to build your online presence and credibility.</p>
       </div>
       <div class="card">
         <h3>GST Registration & Compliance</h3>
-        <p>GST registration, returns filing, corrections and ongoing compliance support for businesses.</p>
+        <p>GST registration, return filing, updates and compliance support for businesses of all sizes.</p>
       </div>
       <div class="card">
         <h3>Business Registration</h3>
-        <p>Support for proprietorship, partnership and basic business setup with documentation guidance.</p>
+        <p>Assistance with proprietorship, partnership and basic business setup documentation.</p>
       </div>
       <div class="card">
         <h3>Legal Assistance</h3>
-        <p>Legal guidance for businesses through our associated lawyer, including documentation and advisory support.</p>
+        <p>Legal guidance and documentation support for businesses through our associated lawyer.</p>
       </div>
       <div class="card">
         <h3>Resume & Profile Optimization</h3>
-        <p>Professional resumes, LinkedIn profile optimization and job-ready documentation for students and professionals.</p>
+        <p>Job-ready resumes, LinkedIn profile enhancement and professional documentation services.</p>
       </div>
       <div class="card">
         <h3>Data & Online Support Services</h3>
-        <p>Data entry, form filling, online applications and tech-assisted support services handled remotely.</p>
+        <p>Data entry, online form filling, applications and tech-assisted remote support services.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media Marketing</h3>
+        <p>Managing and growing your presence on platforms like Instagram, Facebook and WhatsApp Business through content, posts and promotions.</p>
+      </div>
+      <div class="card">
+        <h3>Business Digital Transformation</h3>
+        <p>Helping offline businesses move online with websites, Google presence, social profiles and complete online visibility.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="why">
+    <h2>Why Choose YUKTI</h2>
+    <div class="why">
+      <div>
+        <h3>Affordable & Transparent</h3>
+        <p>Clear pricing with no hidden charges, suitable for startups and individuals.</p>
+      </div>
+      <div>
+        <h3>Professional Support</h3>
+        <p>Work handled with care, accuracy and responsibility.</p>
+      </div>
+      <div>
+        <h3>Legal Backing</h3>
+        <p>Access to legal assistance through an associated lawyer when needed.</p>
+      </div>
+      <div>
+        <h3>Technology Driven</h3>
+        <p>Online-first approach allowing faster delivery and remote support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact">
-      <p><strong>Email:</strong> your-indiayukti@gmail.com</p>
+      <p><strong>Email:</strong> indiayukti@gmail.com</p>
       <p><strong>WhatsApp:</strong> +91-6202046049</p>
       <p><strong>Address:</strong><br />
         028, Station Road,<br />
-        Begusarai – 851101<br />
+        Begusarai – 851101,<br />
         Bihar, India
       </p>
     </div>
@@ -125,6 +199,7 @@
 
   <footer>
     <p>© 2020 YUKTI – Solutions Hub. All rights reserved.</p>
+    <p><small>Disclaimer: Legal assistance is provided through an associated legal professional.</small></p>
   </footer>
 
 </body>
